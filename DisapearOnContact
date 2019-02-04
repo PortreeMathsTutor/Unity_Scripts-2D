@@ -1,0 +1,17 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class DisapearOnContact : MonoBehaviour
+{
+    public Renderer rend;
+
+   
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+    
+
+        { rend.enabled = false; }
+    }
+}
