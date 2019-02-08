@@ -1,0 +1,11 @@
+using UnityEngine;
+
+public class SetPosition : MonoBehaviour
+{
+    public Vector2 vector1;
+
+    void Update()
+    {
+        transform.position = vector1; //This is where the sprite will stay.
+    }
+}
