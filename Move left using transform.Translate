@@ -1,0 +1,12 @@
+using UnityEngine;
+
+public class ChangeThePositionOfSprite : MonoBehaviour
+{
+    public int speed;
+
+    void Update()
+    {
+                                                         // Move the object forward to the left.
+ transform.Translate(Vector3.forward*speed);             // Even though this is a 2D game I can still use vecto3
+    }
+}
