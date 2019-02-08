@@ -1,12 +1,12 @@
-
 using UnityEngine;
 
 public class SimpleMovement : MonoBehaviour { 
 
-    public Rigidbody2D rb2D;
+    public Rigidbody2D myRidgedBody;
+    public Vector2 vector;
   
     void Update()
     {
-        rb2D.velocity = new Vector2(2f, 0.0f);
+        myRidgedBody.velocity = vector;
     }
 }
