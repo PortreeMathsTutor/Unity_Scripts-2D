@@ -1,0 +1,13 @@
+using UnityEngine;
+using UnityEngine.UI;
+                                              //I put this on the text.
+
+public class ToggleText : MonoBehaviour
+{
+     public Text text;
+
+    void Update()
+    {
+        text.text = "Success";
+    }
+}
