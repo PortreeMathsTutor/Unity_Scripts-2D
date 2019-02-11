@@ -1,0 +1,32 @@
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+//I put this on clickable objects
+
+
+public class IfClicked : MonoBehaviour
+{
+    public static int score = 0;
+    public int margonOfError;
+    public Transform nextLevel;
+    public Vector2 position;
+
+    // Use this for initialization
+
+    void OnMouseDown()
+    {
+        Debug.Log("mouse was clicked.");
+        Vector2 mousPosition = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+        position = gameObject.transform.position;
+
+        if (Vector2.Distance(position, mousPosition) < margonOfError)
+        {
+            score = score + 100;
+            Debug.Log(score);
+            Destroy(gameObject);
+
+        }
+    }
+}
